@@ -28,3 +28,6 @@ Having fun
 ### Videos
 
 * [Defining a grid (2:57)](https://gridbyexample.com/video/series-define-a-grid/)
+
+## License
+[![CC0](http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg)](https://creativecommons.org/publicdomain/zero/1.0/)
