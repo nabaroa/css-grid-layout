@@ -1,5 +1,5 @@
 # CSS Grid Layout
-
+![nak Grid Layout logo](./assets/nak-grid-layout.svg)
 
 ## nak Grid Layout Playground
 
