@@ -1,0 +1,33 @@
+{
+  "name": "css-grid-layout",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "cssnano": "^3.6.2",
+    "gulp": "^3.9.1",
+    "gulp-cssnano": "^2.1.1",
+    "gulp-notify": "^3.0.0",
+    "gulp-postcss": "^7.0.0",
+    "lunr": "^2.1.4",
+    "postcss-apply": "^0.8.0",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^6.2.0",
+    "postcss-import": "^11.0.0",
+    "postcss-media-variables": "^2.0.0",
+    "postcss-mixins": "^6.2.0",
+    "postcss-nested": "^2.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/nabaroa/css-grid-layout.git"
+  },
+  "homepage": "",
+  "description": ""
+}
