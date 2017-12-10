@@ -1,0 +1,6 @@
+a:link,a:visited{
+  color:var(--color);
+}
+a:hover,a:active,a:focus{
+  color:var(--color-dark);
+}

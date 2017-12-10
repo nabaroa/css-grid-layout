@@ -1,0 +1,3 @@
+header,footer,article{
+  padding: calc(var(--spacer) * 3) calc(var(--spacer) * 6);
+}

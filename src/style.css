@@ -1,4 +1,13 @@
 /*PostCSS based CSS*/
 @import "settings/variables.css";
 @import "tools/mixins.css";
-@import "generic/reset.css"; 
+@import "generic/reset.css";
+@import "elements/typography.css";
+@import "elements/layout.css";
+@import "elements/links.css";
+@import "elements/headings.css";
+@import "objects/grid-layout.css";
+@import "components/lists.css";
+@import "trumps/type.css";
+@import "trumps/alignment.css";
+@import "trumps/custom-backgrounds.css";

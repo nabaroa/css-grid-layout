@@ -1,0 +1,15 @@
+.bg-about{
+  background:  url(../assets/naiara-abaroa.jpg) 0 0 no-repeat;
+  background-size: contain;
+}
+.bg-opaque{
+  background: var(--opaque);
+  color:white;
+}
+.bg-darker{
+  background: var(--darker);
+  color:white;
+}
+.bg-color{
+  background: var(--color);
+}

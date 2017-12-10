@@ -1,0 +1,32 @@
+/*proof of concept*/
+
+.nak-grid{
+  display: grid;
+
+}
+.nak-grid-template-columns{
+  .nak-grid-1{
+    grid-template-columns: 1;
+
+  }
+  .nak-grid-2{
+    grid-template-columns: 2;
+  }
+
+}
+.nak-grid-template-rows{
+  grid-template-rows:100vh 100vh 100vh 100vh;
+
+}
+.nak-grid-template-areas{
+
+}
+.nak-grip-column-gap{
+
+}
+.nak-grip-row-gap{
+
+}
+.nakgrid-gap{
+
+}

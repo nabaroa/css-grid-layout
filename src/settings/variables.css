@@ -1,0 +1,20 @@
+:root {
+  --spacer: 8px;
+
+  --color: #01A9DB;
+  --color-dark: #0489B1;
+
+  /*// Greyscale*/
+  --black: black;
+  --opaque: #111111;
+  --darker: #222222;
+  --dark: #313131;
+  --darkless: #3e3e3e;
+  --neutraler: #444444;
+  --neutral: #666666;
+  --paler: #777777;
+  --pale: #999999;
+  --barer: #b9b8b8;
+  --bare: #cccccc;
+  --white: white;
+}

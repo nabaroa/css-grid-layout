@@ -1,0 +1,8 @@
+.nak-simple-list{
+  list-style: circle;
+  padding: calc(6 * var(--spacer));  
+
+}
+.nak-simple-list__item{
+  margin-bottom: var(--spacer);
+}
