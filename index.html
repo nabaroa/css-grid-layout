@@ -15,21 +15,49 @@
       <img src="assets/nak-grid-layout.svg" alt="">
       <h1 class="strong">nak playground</h1>
       <h2><a href="#css-grid-layout" aria-hidden="true" class="anchor" id="user-content-css-grid-layout"></a>CSS Grid Layout</h2>
-      <p>Work in progress =^_^=</p>
-      <ul>
-        <li><a href="#playground">Playground</a></li>
-        <li><a href="#resources">Resources</a></li>
-        <li><a href="#about">About</a></li>
-      </ul>
+      <p class="pin">Work in progress</p>
+      <nav>
+        <ul class="nav">
+          <li class="nav__item"><a href="#playground">Playground</a></li>
+          <li class="nav__item"><a href="#resources">Resources</a></li>
+          <li class="nav__item"><a href="#about">About</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <article id="Playground">
+    <article id="playground">
 
       <code>
           <pre>
-            .nak-grid{
-              display: grid;
-            }
+.nak-grid{
+  display: grid;
+}
+          </pre>
+        </code>
+
+      <code>
+          <pre>
+/* Keyword value */
+grid-template-rows: none;
+
+/* <track-list> values */
+grid-template-rows: 100px 1fr;
+grid-template-rows: [linename] 100px;
+grid-template-rows: [linename1] 100px [linename2 linename3];
+grid-template-rows: minmax(100px, 1fr);
+grid-template-rows: fit-content(40%);
+grid-template-rows: repeat(3, 200px);
+
+/* <auto-track-list> values */
+grid-template-rows: 200px repeat(auto-fill, 100px) 300px;
+grid-template-rows: minmax(100px, max-content) repeat(auto-fill, 200px) 20%;
+grid-template-rows: [linename1] 100px [linename2] repeat(auto-fit, [linename3 linename4] 300px) 100px;
+grid-template-rows: [linename1 linename2] 100px repeat(auto-fit, [linename1] 300px) [linename3];
+
+/* Global values */
+grid-template-rows: inherit;
+grid-template-rows: initial;
+grid-template-rows: unset;
           </pre>
         </code>
     </article>

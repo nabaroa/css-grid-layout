@@ -1,0 +1,36 @@
+.pin {
+  display: flex;
+  position: absolute;
+  top: calc(var(--spacer)*6);
+  right: calc(var(--spacer)*6);
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  height: 150px;
+  padding: var(--spacer);
+  border-radius: var(--border-radius);
+  background: var(--opaque);
+  color: var(--color);
+  text-align: center;
+  &:before {
+    position: absolute;
+    width: calc(var(--spacer)*2);
+    height: calc(var(--spacer)*2);
+    border-radius: calc(var(--border-radius)/2);
+    background: var(--color);
+    animation: pin 5s infinite alternate;
+    content: "";
+    opacity: 0;
+    top:var(--spacer);
+    right:var(--spacer);
+  }
+}
+
+@keyframes pin {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

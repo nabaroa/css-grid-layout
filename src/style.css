@@ -8,6 +8,8 @@
 @import "elements/headings.css";
 @import "objects/grid-layout.css";
 @import "components/lists.css";
+@import "components/nav.css";
+@import "components/pin.css";
 @import "trumps/type.css";
 @import "trumps/alignment.css";
 @import "trumps/custom-backgrounds.css";
