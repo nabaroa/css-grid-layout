@@ -1,5 +1,5 @@
 // PostCSS by @nabaroa
-var gulp = require('gulp'),
+const gulp = require('gulp'),
     postcss = require('gulp-postcss'),
     autoprefixer = require('autoprefixer'),
     cssimport = require('postcss-import'),
@@ -9,10 +9,11 @@ var gulp = require('gulp'),
     nested = require('postcss-nested'),
     customMedia = require("postcss-custom-media")
     nano = require('gulp-cssnano'),
+    browserSync = require('browser-sync'),
     notify = require('gulp-notify');
 
-gulp.task('css', function() {
-    var processors = [
+gulp.task('css', () => {
+    const processors = [
       cssimport,
       autoprefixer,
       customproperties,
@@ -21,7 +22,7 @@ gulp.task('css', function() {
       nested,
       customMedia
     ];
-    var configNano = {
+    const configNano = {
       autoprefixer: { browsers: 'last 2 versions' },
       discardComments: { removeAll: true },
       safe: true
@@ -32,11 +33,18 @@ gulp.task('css', function() {
         .pipe(gulp.dest('./css'))
         .pipe(notify({ message: 'Your CSS is ready ♡' }));
 });
-// Watch
-gulp.task('watch', function() {
-    gulp.watch('src/**/*.css', ['css']); 
+
+gulp.task('browser-sync', () => {
+  browserSync({
+    server: {
+      baseDir: './'
+    }
+  });
+});
+
+gulp.task('watch', () => {
+    gulp.watch('src/**/*.css', ['css']);
 
 });
 
-// Default
-gulp.task('default', ['css', 'watch',]);
+gulp.task('default', ['css', 'browser-sync','watch',]);
