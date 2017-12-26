@@ -1,0 +1,8 @@
+@keyframes bigger {
+  from {
+    background-size: 100%;
+  }
+  to {
+    background-size: 150%;
+  }
+}

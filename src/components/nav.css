@@ -1,6 +1,6 @@
 .nav{
   display:flex;
-  background: var(--opaque);
+  /* background: var(--opaque); */
   padding: var(--spacer);
   margin:var(--spacer) 0;
 }
