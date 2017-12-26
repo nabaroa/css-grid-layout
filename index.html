@@ -28,16 +28,39 @@
       </nav>
     </header>
 
-    <article id="playground" class="nak-grid nak-grid-4 p-a-0">
-
-      <div class="d-flex justify-content-center align-items-center">
-
-        <a href="" class="js-scroll-into-example--tree-columns">Three Columns
-
-      <img src="assets/grid-layout-1.svg" alt=""></a></div>
-      <div class="bg-brand"></div>
-      <div class="bg-darker"></div>
-      <div></div>
+    <article id="playground" class="square-grid nak-grid nak-grid-4 p-a-0">
+      <div>
+        <a href="" class="square-grid__link js-scroll-into-example--tree-columns">
+          <span>Three Columns</span>
+        <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+          <use xlink:href="#example--tree-columns"></use>
+        </svg>
+      </a>
+      </div>
+      <div class="bg-brand text-inverse">
+        <a href="" class="square-grid__link js-scroll-into-example--tree-columns3">
+          <span>Square grid</span>
+          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+            <use xlink:href="#example--tree-columns"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="bg-darker text-inverse">
+        <a href="" class="square-grid__link js-scroll-into-example--tree-columns2">
+          <span>Square grid</span>
+          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+            <use xlink:href="#example--tree-columns"></use>
+          </svg>
+        </a>
+      </div>
+      <div>
+        <a href="" class="square-grid__link js-scroll-into-example--tree-columns1">
+          <span>Square grid</span>
+          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+            <use xlink:href="#example--tree-columns"></use>
+          </svg>
+        </a>
+      </div>
       <div class="bg-brand"></div>
       <div></div>
       <div></div>
@@ -54,39 +77,7 @@
     </article>
     <article>
 
-      <code>
-          <pre>
-.nak-grid{
-  display: grid;
-}
-          </pre>
-        </code>
 
-      <code>
-          <pre>
-/* Keyword value */
-grid-template-rows: none;
-
-/* <track-list> values */
-grid-template-rows: 100px 1fr;
-grid-template-rows: [linename] 100px;
-grid-template-rows: [linename1] 100px [linename2 linename3];
-grid-template-rows: minmax(100px, 1fr);
-grid-template-rows: fit-content(40%);
-grid-template-rows: repeat(3, 200px);
-
-/* <auto-track-list> values */
-grid-template-rows: 200px repeat(auto-fill, 100px) 300px;
-grid-template-rows: minmax(100px, max-content) repeat(auto-fill, 200px) 20%;
-grid-template-rows: [linename1] 100px [linename2] repeat(auto-fit, [linename3 linename4] 300px) 100px;
-grid-template-rows: [linename1 linename2] 100px repeat(auto-fit, [linename1] 300px) [linename3];
-
-/* Global values */
-grid-template-rows: inherit;
-grid-template-rows: initial;
-grid-template-rows: unset;
-          </pre>
-        </code>
     </article>
 
 
@@ -161,20 +152,95 @@ grid-template-rows: unset;
     });
   </script>
 
-  <script type="text/javascript">
-    var _gaq = _gaq || [];
-    _gaq.push(['_setAccount', 'UA-32740256-1']);
-    _gaq.push(['_trackPageview']);
 
-    (function() {
-      var ga = document.createElement('script');
-      ga.type = 'text/javascript';
-      ga.async = true;
-      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-      var s = document.getElementsByTagName('script')[0];
-      s.parentNode.insertBefore(ga, s);
-    })();
-  </script>
+
+  <!-- svg -->
+  <!-- 3 columns layout -->
+  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+      <defs>
+        <g id="example--tree-columns">
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="5.781" y1="4.25" x2="5.781" y2="7.25"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="5.9611,5.9611" x1="5.781" y1="13.211" x2="5.781" y2="224.832"/>
+            <line stroke-miterlimit="10" x1="5.781" y1="227.812" x2="5.781" y2="230.812"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="5.781" y1="4.25" x2="8.781" y2="4.25"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0797,6.0797" x1="14.861" y1="4.25" x2="303.647" y2="4.25"/>
+            <line stroke-miterlimit="10" x1="306.688" y1="4.25" x2="309.688" y2="4.25"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="309.688" y1="4.25" x2="309.688" y2="7.25"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="5.9611,5.9611" x1="309.688" y1="13.211" x2="309.688" y2="224.832"/>
+            <line stroke-miterlimit="10" x1="309.688" y1="227.812" x2="309.688" y2="230.812"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="5.781" y1="49.562" x2="8.781" y2="49.562"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0797,6.0797" x1="14.861" y1="49.562" x2="303.647" y2="49.562"/>
+            <line stroke-miterlimit="10" x1="306.688" y1="49.562" x2="309.688" y2="49.562"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="5.781" y1="183.156" x2="8.781" y2="183.156"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0797,6.0797" x1="14.861" y1="183.156" x2="303.647" y2="183.156"/>
+            <line stroke-miterlimit="10" x1="306.688" y1="183.156" x2="309.688" y2="183.156"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="5.781" y1="232.156" x2="8.781" y2="232.156"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0797,6.0797" x1="14.861" y1="232.156" x2="303.647" y2="232.156"/>
+            <line stroke-miterlimit="10" x1="306.688" y1="232.156" x2="309.688" y2="232.156"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="65.156" y1="49.562" x2="65.156" y2="52.562"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0759,6.0759" x1="65.156" y1="58.638" x2="65.156" y2="177.118"/>
+            <line stroke-miterlimit="10" x1="65.156" y1="180.156" x2="65.156" y2="183.156"/>
+          </g>
+        </g>
+        <g>
+          <g>
+            <line stroke-miterlimit="10" x1="250.219" y1="49.562" x2="250.219" y2="52.562"/>
+
+            <line stroke-miterlimit="10" stroke-dasharray="6.0759,6.0759" x1="250.219" y1="58.638" x2="250.219" y2="177.118"/>
+            <line stroke-miterlimit="10" x1="250.219" y1="180.156" x2="250.219" y2="183.156"/>
+          </g>
+        </g>
+        </g>
+      </defs>
+    </svg>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-32740256-1']);
+      _gaq.push(['_trackPageview']);
+
+      (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
 </body>
 
 </html>

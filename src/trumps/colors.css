@@ -1,11 +1,25 @@
-.text-white{
-  color:var(--white);
-}
-.text-brand{
-  color:var(--color);
+.text-white {
+  color: var(--white);
 }
 
+.text-brand {
+  color: var(--color);
+}
 
-.bg-brand{
+.bg-brand {
   background: var(--color);
+}
+
+.text-inverse {
+  color: var(--white);
+  a{
+    color: var(--white);
+  }
+  svg{
+    stroke: var(--white);
+    fill: var(--white);
+  }
+}
+svg{
+  stroke: var(--pale);
 }

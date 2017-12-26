@@ -1,0 +1,19 @@
+.square-grid{
+  >*{
+    padding: calc(4 * var(--spacer));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+}
+.square-grid__link{
+  text-decoration: none;
+
+}
+.square-grid__image{
+margin-top: calc(2 * var(--spacer));
+width: 100%;
+}

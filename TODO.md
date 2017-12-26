@@ -14,5 +14,3 @@
 * Solve responsive images
 * Solve responsive behavior on layout
 * Add icons: github, menu, heart
-* Modify svg via CSS
-* Try inline SVG with <use>
