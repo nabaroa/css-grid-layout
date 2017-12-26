@@ -1,4 +1,24 @@
 .embed-nav{
   position: absolute;
-  bottom:-40px;
+  bottom:0px;
+  padding-left: 0;
+  box-shadow: none;
+  background: white;
+  ul{
+    margin-top: 10px;
+    li{
+      &.results{
+        a{
+          margin-left: 0;
+        }
+      }
+    }
+    a{
+      border-radius: 0 !important;
+      &:active{
+        box-shadow:none;
+        background: #f4b407;
+      }
+    }
+  }
 }
