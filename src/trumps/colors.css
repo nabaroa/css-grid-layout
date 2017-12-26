@@ -1,0 +1,6 @@
+.text-white{
+  color:var(--white);
+}
+.text-brand{
+  color:var(--color);
+}

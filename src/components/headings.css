@@ -1,0 +1,5 @@
+.nak-title{
+  font-size: 6em;
+  color:var(--white);
+  text-shadow: 1px 1px 20px var(--neutral);
+}

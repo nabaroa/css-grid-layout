@@ -1,16 +1,25 @@
-.bg-about{
-  background:  url(../assets/naiara-abaroa.jpg) 0 0 no-repeat;
+.bg-about {
+  background: url(../assets/naiara-abaroa.jpg) 0 0 no-repeat;
+  background-attachment: fixed;
   background-size: contain;
 }
-.bg-opaque{
-  background: var(--opaque);
-  color:white;
-}
-.bg-darker{
-  background: var(--darker);
-  color:white;
-}
-.bg-color{
-  background: var(--color);
 
+.bg-opaque {
+  background: var(--opaque);
+  color: white;
+}
+
+.bg-darker {
+  background: var(--darker);
+  color: white;
+}
+
+.bg-color {
+  background: var(--color);
+}
+
+.bg-header {
+  background: url(../assets/building.jpg) 0 0 no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
 }
