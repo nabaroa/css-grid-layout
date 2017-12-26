@@ -10,6 +10,7 @@ const gulp = require('gulp'),
     customMedia = require("postcss-custom-media")
     nano = require('gulp-cssnano'),
     browserSync = require('browser-sync'),
+    versionAppend = require('gulp-version-append');
     notify = require('gulp-notify');
 
 gulp.task('css', () => {
@@ -31,7 +32,9 @@ gulp.task('css', () => {
         .pipe(postcss(processors))
         .pipe(nano(configNano))
         .pipe(gulp.dest('./css'))
-        .pipe(notify({ message: 'Your CSS is ready ♡' }));
+        .pipe(notify({ message: 'Your CSS is ready ♡' }))
+        // .pipe(versionAppend(extensionsArray[, options]))
+        .pipe(versionAppend(['css', 'js']));
 });
 
 gulp.task('browser-sync', () => {
@@ -41,6 +44,8 @@ gulp.task('browser-sync', () => {
     }
   });
 });
+
+
 
 gulp.task('watch', () => {
     gulp.watch('src/**/*.css', ['css']);

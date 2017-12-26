@@ -7,6 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>CSS Grid Layout</title>
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/smoothscroll.min.js"></script>
 </head>
 
 <body>
@@ -16,6 +17,7 @@
       <h1 class="nak-title strong">CSS Grid Layout</h1>
       <h2 class="text-white"><a href="#css-grid-layout" aria-hidden="true" class="anchor" id="user-content-css-grid-layout"></a>nak playground</h2>
       <p class="pin">Work in progress</p>
+      <!-- <button class="btn js-scroll-to-top">scroll to top</button> -->
       <nav>
         <ul class="nav">
           <li class="nav__item"><a href="#playground">Playground</a></li>
@@ -27,7 +29,12 @@
     </header>
 
     <article id="playground" class="nak-grid nak-grid-4 p-a-0">
-      <div class="d-flex justify-content-center align-items-center"><a href="#example--three-column">Three Columns</a></div>
+
+      <div class="d-flex justify-content-center align-items-center">
+
+        <a href="" class="js-scroll-into-example--tree-columns">Three Columns
+
+      <img src="assets/grid-layout-1.svg" alt=""></a></div>
       <div class="bg-brand"></div>
       <div class="bg-darker"></div>
       <div></div>
@@ -38,9 +45,12 @@
       <div></div>
       <div class="bg-darker"></div>
     </article>
-    <article id="example--three-column" class="p-a-0">
+    <article id="example--three-column" class="p-a-0 example--three-column">
       <p data-height="452" data-theme-id="32113" data-slug-hash="VawMvy" data-default-tab="css,result" data-user="nabaroa" data-embed-version="2" data-pen-title="CSS Grid - simple three column" data-editable="true" class="codepen">See the Pen <a href="https://codepen.io/nabaroa/pen/VawMvy/">CSS Grid - simple three column</a> by Naiara Abaroa (<a href="https://codepen.io/nabaroa">@nabaroa</a>) on <a href="https://codepen.io">CodePen</a>.</p>
       <script async src="https://production-assets.codepen.io/assets/embed/ei.js"></script>
+    </article>
+    <article>
+      <h2>Terminology</h2>
     </article>
     <article>
 
@@ -113,6 +123,7 @@ grid-template-rows: unset;
 
 
     <article id="about" class="bg-about nak-text-align--right">
+
       <h2>About</h2>
       <p>I am Naiara Abaroa (<a href="https://twitter.com/nabaroa">@nabaroa</a>), front-end designer currently playing with grid</p>
     </article>
@@ -128,6 +139,27 @@ grid-template-rows: unset;
       </div>
     </footer>
   </div>
+
+
+  <script>
+    // add event listener on load
+    window.addEventListener('load', function() {
+
+      // scroll to top
+      // document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
+      //   e.preventDefault();
+      //   document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+      // });
+
+      // scroll into view
+      document.querySelector('.js-scroll-into-example--tree-columns').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('.example--three-column').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+  </script>
 
   <script type="text/javascript">
     var _gaq = _gaq || [];

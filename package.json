@@ -1,6 +1,6 @@
 {
   "name": "css-grid-layout",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -23,7 +23,8 @@
     "postcss-import": "^11.0.0",
     "postcss-media-variables": "^2.0.0",
     "postcss-mixins": "^6.2.0",
-    "postcss-nested": "^3.0.0"
+    "postcss-nested": "^3.0.0",
+    "smoothscroll-polyfill": "^0.4.0"
   },
   "repository": {
     "type": "git",
