@@ -1,3 +1,6 @@
 header,footer,article{
   padding: calc(var(--spacer) * 6);
 }
+article{
+  min-height: 100vh; 
+}

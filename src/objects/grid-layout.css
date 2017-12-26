@@ -5,14 +5,18 @@
 
 }
 .nak-grid-template-columns{
-  .nak-grid-1{
-    grid-template-columns: 1;
 
-  }
-  .nak-grid-2{
-    grid-template-columns: 2;
-  }
 
+}
+.nak-grid-1{
+  grid-template-columns: 1;
+
+}
+.nak-grid-2{
+  grid-template-columns: 50% 50%;
+}
+.nak-grid-4{
+  grid-template-columns: 25% 25% 25% 25%;
 }
 .nak-grid-template-rows{
   grid-template-rows:100vh 100vh 1fr 100vh;

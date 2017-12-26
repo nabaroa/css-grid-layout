@@ -4,3 +4,8 @@
 .text-brand{
   color:var(--color);
 }
+
+
+.bg-brand{
+  background: var(--color);
+}
