@@ -1,24 +1,20 @@
-.embed-nav{
+.embed-nav {
   position: absolute;
-  bottom:0px;
+  bottom: 0px;
   padding-left: 0;
   box-shadow: none;
   background: white;
-  ul{
-    margin-top: 10px;
-    li{
-      &.results{
-        a{
-          margin-left: 0;
-        }
-      }
-    }
-    a{
-      border-radius: 0 !important;
-      &:active{
-        box-shadow:none;
-        background: #f4b407;
-      }
-    }
-  }
+}
+.embed-nav ul {
+  margin-top: 10px;
+}
+.embed-nav ul li.results a {
+  margin-left: 0;
+}
+.embed-nav ul a {
+  border-radius: 0 !important;
+}
+.embed-nav ul a:active {
+  box-shadow: none;
+  background: #f4b407;
 }
