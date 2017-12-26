@@ -9,3 +9,4 @@
 * Add slow scroll
 * Add scroll attached animations (useful in this case?)
 * Add JS to example GoTos. Transition panels? Horizontal scrolling?
+* Filter local GA
