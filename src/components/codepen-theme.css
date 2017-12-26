@@ -15,6 +15,6 @@
   border-radius: 0 !important;
 }
 .embed-nav ul a:active {
-  box-shadow: none;
-  background: #f4b407;
+  box-shadow: none !important;
+  background: #f4b407 !important;
 }
