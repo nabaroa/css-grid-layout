@@ -7,6 +7,7 @@
 @import "elements/links.css";
 @import "elements/headings.css";
 @import "objects/grid-layout.css";
+@import "objects/flex.css";
 @import "components/animations.css";
 @import "components/headings.css";
 @import "components/lists.css";
