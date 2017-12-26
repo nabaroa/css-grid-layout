@@ -6,9 +6,13 @@
 * Add cookie to popover
 * Style codepen buttons
 * Add credits. 'what did i use'
-* Add slow scroll
 * Add scroll attached animations (useful in this case?)
 * Add JS to example GoTos. Transition panels? Horizontal scrolling?
 * Filter local GA
 * Add off-canvas menu
-* Add go to top buttom 
+* Add go to top buttom
+* Solve responsive images
+* Solve responsive behavior on layout
+* Add icons: github, menu, heart
+* Modify svg via CSS
+* Try inline SVG with <use>
