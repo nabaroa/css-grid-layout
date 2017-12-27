@@ -1,9 +1,11 @@
 # CSS Grid Layout
-![nak Grid Layout logo](./assets/nak-grid-layout.svg)
 
-## nak Grid Layout Playground
+## Playground: LIVE layout Examples
 
-Having fun
+### WIP
+
+![Cover image](https://raw.githubusercontent.com/nabaroa/css-grid-layout/master/assets/cover.png)
+
 
 ## Resources
 
