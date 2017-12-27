@@ -1,0 +1,21 @@
+.button--go-to-top {
+  display: flex;
+  position: fixed;
+  right: calc(2 * var(--spacer));
+  bottom: calc(2 * var(--spacer));
+  align-items: center;
+  justify-content: center;
+  width: calc(4 * var(--spacer));
+  height: calc(4 * var(--spacer));
+  border-radius: 500rem;
+  background: var(--opaque);
+  /* border:0; */
+  color:white;
+  &:hover {
+    background: var(--color);
+  }
+  &:before {
+    font-size: 2em;
+    content: "^";
+  }
+}

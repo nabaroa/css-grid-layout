@@ -1,8 +1,8 @@
 .pin {
   display: flex;
   position: fixed;
-  top: calc(var(--spacer)*6);
-  right: calc(var(--spacer)*12);
+  bottom: calc(var(--spacer)*3);
+  right: calc(var(--spacer)*3);
   align-items: center;
   justify-content: center;
   width: 150px;

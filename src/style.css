@@ -1,7 +1,9 @@
 /*PostCSS based CSS*/
 @import "settings/variables.css";
-@import "tools/mixins.css";
+@import "settings/custom-media.css";
+/* @import "tools/mixins.css"; */
 @import "generic/reset.css";
+@import "elements/buttons.css";
 @import "elements/typography.css";
 @import "elements/layout.css";
 @import "elements/links.css";
@@ -9,12 +11,14 @@
 @import "objects/grid-layout.css";
 @import "objects/flex.css";
 @import "components/animations.css";
-/* @import "components/codepen-theme.css"; */
+@import "components/buttons.css";
 @import "components/headings.css";
+@import "components/icons.css";
 @import "components/lists.css";
 @import "components/nav.css";
 @import "components/pin.css";
 @import "components/square-grid.css";
+@import "trumps/displays.css";
 @import "trumps/spacing.css";
 @import "trumps/type.css";
 @import "trumps/alignment.css";

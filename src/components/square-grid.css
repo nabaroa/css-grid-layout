@@ -1,4 +1,4 @@
-.square-grid{
+.example-grid{
   >*{
     padding: calc(4 * var(--spacer));
     display: flex;
@@ -9,11 +9,12 @@
   }
 
 }
-.square-grid__link{
+.example-grid__link{
   text-decoration: none;
 
 }
-.square-grid__image{
+.example-grid__image{
 margin-top: calc(2 * var(--spacer));
 width: 100%;
+stroke:var(--pale);
 }

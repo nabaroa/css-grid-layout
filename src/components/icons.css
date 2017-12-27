@@ -1,0 +1,9 @@
+.icon-menu {
+  position: fixed;
+  top: calc(2 * var(--spacer));
+  right: calc(2 * var(--spacer));
+  width: calc(4 * var(--spacer));;
+  height: calc(4 * var(--spacer));;
+  fill:black;
+  stroke:black !important;
+}

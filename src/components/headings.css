@@ -1,14 +1,16 @@
-.nak-title{
+.nak-title {
+  color: var(--white);
   font-size: 10vw;
-  color:var(--white);
   text-shadow: 1px 1px 20px var(--neutral);
 }
-.nak-title--addon{
-  color:var(--color);
+
+.nak-title--addon {
+  color: var(--color);
   font-size: 5vw;
 }
-.nak-subtitle{
+
+.nak-subtitle {
+  color: var(--white);
   font-size: 5vw;
-  color:var(--white);
   text-shadow: 1px 1px 20px var(--neutral);
 }

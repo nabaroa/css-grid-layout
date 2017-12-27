@@ -24,40 +24,43 @@
           <li class="nav__item"><a href="#playground">Playground</a></li>
           <li class="nav__item"><a href="#exaples">Layout examples</a></li>
           <li class="nav__item"><a href="#resources">Resources</a></li>
-          <li class="nav__item"><a href="#about">About</a></li>
+          <li class="nav__item"><a href="" class="js-scrooll-into-about">About</a></li>
         </ul>
       </nav>
+      <a class="js-open-menu" href=""><svg viewBox="0 0 200 200" class="icon-menu">
+          <use xlink:href="#icon-menu"></use>
+        </svg></a>
     </header>
 
-    <article id="playground" class="square-grid nak-grid nak-grid-4 p-a-0">
+    <article id="playground" class="example-grid nak-grid nak-grid-4 p-a-0">
       <div>
-        <a href="" class="square-grid__link js-scroll-into-example--tree-columns">
+        <a href="" class="example-grid__link js-scroll-into-example--tree-columns">
           <span>Three Columns</span>
-        <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+        <svg viewBox="0 0 316.719 239.125" class="example-grid__image example">
           <use xlink:href="#example--tree-columns"></use>
         </svg>
       </a>
       </div>
       <div class="bg-brand text-inverse">
-        <a href="" class="square-grid__link js-scroll-into-example--tree-columns3">
+        <a href="" class="example-grid__link js-scroll-into-example--tree-columns3">
           <span>Square grid</span>
-          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+          <svg viewBox="0 0 316.719 239.125" class="example-grid__image">
             <use xlink:href="#example--tree-columns"></use>
           </svg>
         </a>
       </div>
       <div class="bg-darker text-inverse">
-        <a href="" class="square-grid__link js-scroll-into-example--tree-columns2">
+        <a href="" class="example-grid__link js-scroll-into-example--tree-columns2">
           <span>Square grid</span>
-          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+          <svg viewBox="0 0 316.719 239.125" class="example-grid__image">
             <use xlink:href="#example--tree-columns"></use>
           </svg>
         </a>
       </div>
       <div>
-        <a href="" class="square-grid__link js-scroll-into-example--tree-columns1">
+        <a href="" class="example-grid__link js-scroll-into-example--tree-columns1">
           <span>Square grid</span>
-          <svg viewBox="0 0 316.719 239.125" class="square-grid__image">
+          <svg viewBox="0 0 316.719 239.125" class="example-grid__image">
             <use xlink:href="#example--tree-columns"></use>
           </svg>
         </a>
@@ -111,19 +114,15 @@
 
 
     <article id="about" class="bg-about nak-text-align--right">
-
       <h2>About</h2>
-      <p>I am Naiara Abaroa (<a href="https://twitter.com/nabaroa">@nabaroa</a>), front-end designer currently playing with grid</p>
+      <p class="">Made with <span class="text-brand">❤ </span>by <a href="Naiara Abaroa" target="_blank">Naiara Abaroa</a> <a href="https://twitter.com/nabaroa" target="_blank">(@nabaroa)</a></p>
+      <p class="huge">Live local<span class="text-brand">.</span> Work global<span class="text-brand">.</span></p>
     </article>
 
     <footer class="bg-darker">
       <div>
         <h2><a href="#license" aria-hidden="true" class="anchor" id="user-content-license"></a>License</h2>
         <p><a href="https://creativecommons.org/publicdomain/zero/1.0/" rel="nofollow"><img src="https://camo.githubusercontent.com/60561947585c982aee67ed3e3b25388184cc0aa3/687474703a2f2f6d6972726f72732e6372656174697665636f6d6d6f6e732e6f72672f70726573736b69742f627574746f6e732f38387833312f7376672f63632d7a65726f2e737667" alt="CC0" data-canonical-src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/cc-zero.svg" style="max-width:100%;"></a></p>
-      </div>
-      <div>
-        <p>Made with <span class="text-brand">❤ </span>from Lekeitio</p>
-        <p>Live local<span class="text-brand">.</span> Work global<span class="text-brand">.</span></p>
       </div>
       <h2>Credits</h2>
       <ul>
@@ -143,17 +142,17 @@
       </ul>
     </footer>
   </div>
-
+  <button class="js-scroll-to-top button--go-to-top"></button>
 
   <script>
     // add event listener on load
     window.addEventListener('load', function() {
 
       // scroll to top
-      // document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
-      //   e.preventDefault();
-      //   document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
-      // });
+      document.querySelector('.js-scroll-to-top').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('header').scrollIntoView({ behavior: 'smooth' });
+      });
 
       // scroll into view
       document.querySelector('.js-scroll-into-example--tree-columns').addEventListener('click', function(e) {
@@ -162,12 +161,20 @@
           behavior: 'smooth'
         });
       });
+      // scroll into view
+      document.querySelector('.js-scrooll-into-about').addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector('#about').scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
     });
   </script>
 
   <!-- svg -->
-  <!-- 3 columns layout -->
-  <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
+  <div class="d-none">
+    <!-- 3 columns layout -->
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px">
       <defs>
         <g id="example--tree-columns">
         <g>
@@ -237,6 +244,25 @@
         </g>
       </defs>
     </svg>
+    <!-- svg icons -->
+    <svg id="icon-menu" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 50 62.5" enable-background="new 0 0 50 50" xml:space="preserve">
+    <g display="none">
+      <g display="inline"><path d="M41.44,5.274C29.947,5.303,18.76,8.573,7.273,8.441c-2.224-0.025-6.157,3.316-2.234,3.361    c11.508,0.132,22.683-3.139,34.167-3.167C41.419,8.63,45.359,5.265,41.44,5.274z"/><path
+
+        d="M44.397,21.397c-5.419,0.842-10.857,0.924-16.317,1.272c-5.84,0.373-11.625,1.464-17.474,0.579    c-1.777-0.269-6.828,2.587-3.567,3.081c5.614,0.85,11.181,0.309,16.798-0.239c6.587-0.644,13.19-0.559,19.745-1.577    C46.311,24.089,48.411,20.774,44.397,21.397z"/><path
+
+        d="M42.312,41.432c-4.821,1.609-10.715,0.866-15.687,0.523c-4.901-0.338-10.769,0.116-15.427-1.473    c-1.33-0.454-6.517,1.678-4.753,2.279c6.05,2.063,13.707,1.478,20.047,1.833c5.984,0.335,12.121,0.127,17.841-1.782    C48.257,41.503,44.542,40.688,42.312,41.432z"/></g>
+    </g>
+    <g>
+      <g><path d="M7.061,10.688c11.654-1.822,23.457,0.164,35.166-1c2.968-0.295,4.698-3.943,0.701-3.546    c-11.712,1.164-23.49-0.825-35.166,1C4.861,7.595,3.08,11.311,7.061,10.688z"/><path
+
+        d="M6.106,25.999c7.635,0.141,15.129-1.374,22.745-1.534c4.658-0.098,9.73,0.559,14.279-0.81    c1.131-0.34,2.521-0.994,2.476-2.351c-0.002-0.055-0.004-0.11-0.006-0.165c-0.044-1.313-2.486-1.266-4.187-0.429    c-4.141,0.949-8.845,0.097-13.016,0.319c-6.713,0.358-13.358,1.592-20.096,1.467C5.981,22.454,2.179,25.926,6.106,25.999z"/><path
+
+        d="M41.549,37.726c-4.651,2.286-10.269,2.103-15.327,1.842c-6.049-0.312-12.073-0.74-18.052-1.742    c-2.831-0.474-5.9,3.527-2.016,4.178c7.162,1.199,14.527,1.806,21.791,1.88c5.508,0.057,11.144-0.314,16.161-2.78    C47.664,39.354,44.476,36.287,41.549,37.726z"/></g>
+    </g>
+  </svg>
+  </div>
+
 
   <script type="text/javascript">
     var _gaq = _gaq || [];
