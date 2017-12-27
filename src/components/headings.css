@@ -3,3 +3,12 @@
   color:var(--white);
   text-shadow: 1px 1px 20px var(--neutral);
 }
+.nak-title--addon{
+  color:var(--color);
+  font-size: 5vw;
+}
+.nak-subtitle{
+  font-size: 5vw;
+  color:var(--white);
+  text-shadow: 1px 1px 20px var(--neutral);
+}
