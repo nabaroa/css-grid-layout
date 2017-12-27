@@ -16,10 +16,10 @@
   grid-template-columns: 50% 50%;
 }
 .nak-grid-4{
-  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-columns: repeat(4, 1fr);
 }
 .nak-grid-template-rows{
-  grid-template-rows:100vh 100vh 1fr 100vh;
+  /* grid-template-rows:100vh 100vh 1fr 100vh; */
 
 }
 .nak-grid-template-areas{

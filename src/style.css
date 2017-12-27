@@ -16,6 +16,7 @@
 @import "components/icons.css";
 @import "components/lists.css";
 @import "components/nav.css";
+@import "components/panels.css";
 @import "components/pin.css";
 @import "components/square-grid.css";
 @import "trumps/displays.css";
@@ -24,3 +25,4 @@
 @import "trumps/alignment.css";
 @import "trumps/colors.css";
 @import "trumps/custom-backgrounds.css";
+@import "trumps/view.css";

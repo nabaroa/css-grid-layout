@@ -1,6 +1,7 @@
 .example-grid{
+  position: relative;
   >*{
-    padding: calc(4 * var(--spacer));
+
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,7 +11,9 @@
 
 }
 .example-grid__link{
+  display: block;
   text-decoration: none;
+  padding: calc(4 * var(--spacer));
 
 }
 .example-grid__image{

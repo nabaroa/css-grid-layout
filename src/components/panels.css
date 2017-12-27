@@ -1,0 +1,21 @@
+.panel {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 100vw);
+  max-height: 0;
+  visibility: hidden;
+  /* transform: translateX(0); */
+  &.is-open {
+    max-height: 450px;
+    transition: .4s;
+    visibility: visible;
+  }
+  &.position-1{
+    transform: translateX(0);
+  }
+  &.position-2{
+    transform: translateX(-100vw);
+  }
+}
+
+.panel__item {}

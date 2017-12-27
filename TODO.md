@@ -19,3 +19,4 @@
 * Solve example code layout
 * Add smoothscroll to menu links
 * Add favicon
+* Solve links problem
