@@ -14,3 +14,8 @@
 * Solve responsive images
 * Solve responsive behavior on layout
 * Add icons: github, menu, heart
+* Add variable breakpoints
+* Add responsive layout example
+* Add support grid example
+* Create codepen collection and template
+* Add atoms setting on what did I use?
